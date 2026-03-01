@@ -221,7 +221,7 @@ Lambda → Configuration → Environment variables
 
 - `API_TOKEN` = your token
 - `TABLE_NAME` = `AnkiAddNotes`
-- `USER_ID` = `yoyo` (or any identifier you want)
+- `USER_ID` = `user7496` (or any identifier you want)
 
 Lambda → Permissions (execution role)
 
@@ -576,7 +576,7 @@ Use Tokyo region:
 Prepare these values (you’ll paste them later):
 
 - `API_TOKEN` — your long random token
-- `USER_ID` — a simple identifier (example: `yoyo`)
+- `USER_ID` — a simple identifier (example: `user7496`)
 - `TABLE_NAME` — use `AnkiAddNotes`
 
 ---
@@ -640,7 +640,7 @@ Add:
 
 - `API_TOKEN` = your token
 - `TABLE_NAME` = `AnkiAddNotes`
-- `USER_ID` = `yoyo` (or your chosen ID)
+- `USER_ID` = `user7496` (or your chosen ID)
 
 ---
 
@@ -788,7 +788,7 @@ This section provides:
 - **Lambda env vars:**
   - `API_TOKEN` = your Bearer token
   - `TABLE_NAME` = `AnkiAddNotes`
-  - `USER_ID` = `yoyo` (or your identifier)
+  - `USER_ID` = `user7496` (or your identifier)
 
 ---
 
@@ -803,7 +803,7 @@ from boto3.dynamodb.conditions import Key
 
 API_TOKEN = os.environ.get("API_TOKEN", "")
 TABLE_NAME = os.environ.get("TABLE_NAME", "")
-USER_ID = os.environ.get("USER_ID", "yoyo")
+USER_ID = os.environ.get("USER_ID", "user7496")
 
 ddb = boto3.resource("dynamodb")
 table = ddb.Table(TABLE_NAME)
